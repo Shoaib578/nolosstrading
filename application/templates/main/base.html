@@ -1,0 +1,93 @@
+
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+
+<!-- Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<!-- Custom styles for this template -->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mediumish.css') }}">
+
+{% block head %}
+
+
+{% endblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    
+  </div>
+
+
+<!-- Begin Nav
+================================================== -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+            <h3>No Loss Trading</h3>
+        </a>
+        <!-- End Logo -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+
+              
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: bold;" href="/">Home</a>
+                    </li>
+
+                <li class="nav-item ">
+                <a class="nav-link" style="font-weight: bold;" href="/blogs">Blogs </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a  style="font-weight: bold;" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" style="font-weight: bold;" href="{{ url_for('main.SearchByCategory',category='us stock market') }}">US Stock Market</a>
+                      <a class="dropdown-item" style="font-weight: bold;" href="{{ url_for('main.SearchByCategory',category='indian stock market') }}">Indian Stock Market</a>
+
+                    </div>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold;" href="/slides">Slide</a>
+                    </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-weight: bold;" href="/about">About </a>
+                </li>
+            </ul>
+            <!-- End Menu -->
+            <!-- Begin Search -->
+            <form method="get" action="/search_blog" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" name="keywords" placeholder="Search">
+                <span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span>
+            </form>
+            <!-- End Search -->
+        </div>
+    </div>
+    </nav>
+    <!-- End Nav -->
+
+  
+
+{% block body %}
+
+
+{% endblock %}
+
+
+<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+
+
+<script src="{{ url_for('static', filename='assets/js/ie10-viewport-bug-workaround.js') }}"></script>

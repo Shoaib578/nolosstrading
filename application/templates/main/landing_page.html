@@ -1,0 +1,119 @@
+{% extends 'main/base.html' %}
+
+
+{% block head %}
+<title>Home</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/landing_page/css/templatemo-style.css') }}">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/landing_page/css/font-awesome.min.css') }}">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+{% endblock %}
+
+
+{% block body %}
+		<!-- start home -->
+		<section id="home">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+							<h1 class="text-upper">Welcome to Bussiness Blog Website</h1>
+							<p class="tm-white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end home -->
+		<!-- start divider -->
+		<section id="divider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fab fa-blogger-b" style='font-size:65px;color:skyblue;'></i>
+						<h3 class="text-uppercase">Blogs</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+					</div>
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fa fa-balance-scale"></i>
+						<h3 class="text-uppercase">Trade</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+					</div>
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fa fa-briefcase"></i>
+						<h3 class="text-uppercase">Bussiness</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end divider -->
+
+		<!-- start feature -->
+		<section id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h2 class="text-uppercase">About us</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="/about">more</a></p>
+						
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+						<img src="{{ url_for('static', filename='assets/landing_page/images/about.png') }}" class="img-responsive" alt="feature img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end feature -->
+
+
+	        
+		<div class="content-block full-width-content-block">
+				
+			<div class="grid-container" style="padding: 40px;">
+				
+				<div class="grid-70 prefix-15 suffix-15 mobile-grid-100 nopadding">
+					
+					<p style="font-size: 16px;"><strong><em>Disclaimer and risk warning</em></strong></p>
+					<p style="font-size: 12px; line-height:20px;"><em>Options Trading IQ Pty Ltd (ACN 658941612) is a Corporate Authorised Representative (001296496) of Network Influencer Pty Ltd (AFSL 282288) (trading as FZeroZero). Under these authorisations, Options Trading IQ is authorised to provide general financial product advice in respect of certain classes of financial products, which include securities and derivatives. Any financial product advice provided is general advice only and does not take into account your objectives, financial situation and needs. You should obtain investment advice from a licensed investment adviser before making any investment decisions. Options Trading IQ provides educational courses, this may include the supply of factual information and general advice about securities and derivatives products. Securities and Derivatives trading involves a high level of risk and may not be suitable for all investors. Past performance is not indicative of future results.</em></p>
+					<style>
+					
+					</style>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+
+	
+
+
+    <!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<p>Copyright © <script>document.write( new Date().toDateString())</script> Your Company Name</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+
+
+{% endblock %}
+
+
+<script src="{{ url_for('static', filename='assets/landing_page/js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/landing_page/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/landing_page/js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/landing_page/js/jquery.singlePageNav.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/landing_page/js/custom.js') }}"></script>

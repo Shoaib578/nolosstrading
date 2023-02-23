@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+
+
+{% block head %}
+<title>Blogs</title>
+{% endblock %}
+
+
+{% block body %}
+  <!-- Begin Site Title
+================================================== -->
+<div class="container">
+	<div class="mainheading">
+		<h1 class="sitetitle">Blogs</h1>
+		<hr>
+	</div>
+<!-- End Site Title
+================================================== -->
+<div class="card-row listfeaturedtag">
+
+
+    {% for blog in blogs %}
+    <!-- begin post -->
+    <div class="card">
+        <div class="row">
+            <div class="col-md-5 wrapthumbnail">
+                <a href="{{ url_for('main.ViewBlog',id=blog.blog_id) }}">
+                    <div class="thumbnail">
+                        <img style="width: 100%;height: 100%;" src="{{ url_for('static',filename='uploads/'+blog.blog_image) }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-7">
+                <div class="card-block">
+                    <h2 class="card-title"><a href="{{ url_for('main.ViewBlog',id=blog.blog_id) }}">{{ blog.blog_title }}</a></h2>
+                    <h4 class="card-text">{{ blog.blog_description[0:80] }}</h4>
+                    <div class="metafooter">
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end post -->
+    {% endfor %}
+  
+
+</div>
+{% endblock %}

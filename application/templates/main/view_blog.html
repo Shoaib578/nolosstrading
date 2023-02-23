@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %}
+
+
+{% block head %}
+<title>Blogs</title>
+{% endblock %}
+
+
+{% block body %}
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+
+	
+
+		<!-- Begin Post -->
+		<div class="col-md-8 col-md-offset-2 col-xs-12">
+			
+
+			<!-- Begin Featured Image -->
+			<img class="featured-image img-fluid" src="{{ url_for('static',filename='uploads/'+blog.blog_image) }}" alt="">
+			<!-- End Featured Image -->
+
+
+			<div>
+			<!-- Begin Post Content -->
+			<div class="article-post float-left">
+				<h3>{{ blog.blog_title }}</h3>
+				<p>
+					{{ blog.blog_description}}
+				</p>
+
+			</div>
+			<!-- End Post Content -->
+
+
+			<div class="float-right">
+				<p>Posted Date : {{ blog.added_date }}</p>
+			</div>
+			</div>
+			
+
+		
+
+		</div>
+		<!-- End Post -->
+
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+
+<div class="hideshare"></div>
+
+
+{% endblock %}
